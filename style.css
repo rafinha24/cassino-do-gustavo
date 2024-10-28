@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d2b64;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#bet-button {
+    padding: 12px 25px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#bet-button:hover {
+    background-color: #ff9068;
+}
+
+.cups-container {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #8b4513;
+    position: relative;
+    overflow: hidden;
+}
+
+.cup {
+    width: 60px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 30%, #333, #000);
+    border-radius: 50% 50% 0 0;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(180deg) translateY(0); 
+    transition: transform 0.5s ease;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #555, #000);
+    border-radius: 50%;
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ff4b2b;
+}
+
+#instruction {
+    font-size: 16px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #b51010; 
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.casino-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.balance-container {
+    display: flex;
+    align-items: center;
+}
+
+#balance {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.add-balance {
+    width: 30px;
+    height: 30px;
+    background-color: #ff4b2b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-balance:hover {
+    background-color: #ff9068;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9068; 
+}

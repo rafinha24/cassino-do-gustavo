@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Copo com a Bolinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="casino-name">Cassino do Gustavo</h1>
+            <div class="balance-container">
+                <span id="balance">Saldo: R$ 1000</span>
+                <div class="add-balance" title="Adicionar saldo">+</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#cassino">Cassino</a></li>
+                <li><a href="#cassino-online">Cassino Online</a></li>
+                <li><a href="#inicio">Início</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div class="game-container">
+        <h1>Jogo do Copo com a Bolinha</h1>
+        <button id="bet-button">Apostar</button>
+        <p id="instruction"></p>
+        <div class="cups-container">
+            <div class="cup" id="cup1" onclick="guessCup(1)">
+                <div class="ball" id="ball1"></div>
+            </div>
+            <div class="cup" id="cup2" onclick="guessCup(2)">
+                <div class="ball" id="ball2"></div>
+            </div>
+            <div class="cup" id="cup3" onclick="guessCup(3)">
+                <div class="ball" id="ball3"></div>
+            </div>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
